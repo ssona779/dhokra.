@@ -1,0 +1,611 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf3;
+    color: #3e2b1a;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #606e08; /* Deep earthy brown */
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Container */
+  .container {
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo Area */
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5e6c8; /* Brass-inspired soft tone */
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Navigation */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    color: #f5e6c8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #d8b377; /* Warmer brass hover effect */
+  }
+  
+  .hero {
+    background-image: url(images/ww.png);
+    background-size: cover;         /* Makes the image cover the whole section and fit to the background also*/
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-attachment: scroll;  /* Optional: use 'fixed' for parallax effect */
+    
+    background-color: #5a3c3b;      /* Fallback color */
+    color: #fff;
+    padding: 6rem 1rem;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+    color: #f0d7b6; /* Soft brass gold color */
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e1cba8; /* Lighter earthy tone for paragraph text */
+  }
+  
+  .cta-button {
+    background-color: #f0d7b6; /* Brass gold */
+    color: #5a3c3b; /* Deep brown text */
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    background-color: #e0c195; /* Slightly darker brass tone */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  .about-dhokra {
+    background-color: #2a1e1a; /* Dark brownish-black */
+    color: #f0e8d9;            /* Light parchment tone */
+    padding: 4rem 2rem;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-dhokra h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+    color: #d5b37a; /* Brass/golden tone */
+  }
+  
+  .about-dhokra p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    color: #e5dbc8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-dhokra h2 {
+      font-size: 2rem;
+    }
+  
+    .about-dhokra p {
+      font-size: 1rem;
+    }
+  }
+  /* About Dhokra Section Styles */
+.about-dhokra {
+  background-color: #1e1512; /* Deep, dark earthy tone */
+  color: #f2e6d8; /* Light parchment-like text */
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.about-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-dhokra h2 {
+  font-size: 2.5rem;
+  color: #d4a25a; /* Brass-golden tone */
+  margin-bottom: 1.5rem;
+}
+
+.about-dhokra p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e3d5c2; /* Slightly softer text */
+  margin-bottom: 1.2rem;
+}
+/* Featured Collection Section */
+.featured-collection {
+  background-color: #e9e1d3; /* Light earthy beige */
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+  color: #3e2b1f; /* Deep brown text */
+}
+
+.collection-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.featured-collection h2 {
+  font-size: 2.5rem;
+  color: #7c5b3e; /* Rich earthy tone */
+  margin-bottom: 2rem;
+}
+
+.collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.collection-item {
+  background-color: #f8f3eb;
+  border: 1px solid #d6c8b4;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover {
+  transform: translateY(-5px);
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.collection-item h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #5a3e2b;
+}
+
+/* Process Section with Dark Earthy Background */
+.process-section {
+  background-color: #2e1f14; /* deep earthy brown */
+  color: #f5e8dc; /* light beige for text */
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.process-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 2.5rem;
+  color: #e0b080; /* warm golden-beige heading */
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  background-color: #3c2a1a; /* dark warm brown */
+  border-left: 5px solid #e07a3f; /* accent orange line */
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #ffcc99; /* warm light orange */
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e5d3c1; /* soft beige for readability */
+}
+
+/* Testimonials / Artisan Stories Section with Orange Shades */
+.testimonials-section {
+  background: linear-gradient(to right, #f2994a, #f2c94c); /* gradient from burnt orange to golden yellow */
+  color: #3e2a1a; /* deep brown for contrast */
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.testimonial-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  color: #4a2600; /* deep brownish-orange */
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #5a3510; /* slightly lighter for subtext */
+  margin-bottom: 3rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: #fff3e0; /* very light orange (almost creamy) */
+  padding: 1.5rem;
+  border-left: 5px solid #e67e22; /* rich orange */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #5a2e0e;
+}
+
+.name {
+  font-weight: bold;
+  color: #d35400; /* strong orange tone */
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 0.95rem;
+  }
+}
+/* Newsletter Callout Section */
+.newsletter-section {
+  background-color: #2c1a0e; /* dark earthy brown */
+  color: #f5e7d5; /* light warm beige */
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.newsletter-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.newsletter-section h2 {
+  font-size: 2.3rem;
+  color: #e0b98c; /* soft golden brown */
+  margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+  font-size: 1.1rem;
+  color: #e8d3b7;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #d78a44; /* burnt orange */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+}
+/* Footer Section */
+.footer-section {
+  background-color: #fdf4e7; /* light earthy beige */
+  color: #4b3b2c; /* deep brown text */
+  padding: 3rem 1.5rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-about h4 {
+  font-size: 1.5rem;
+  color: #a86c2f; /* bronze brown */
+  margin-bottom: 0.5rem;
+}
+
+.footer-about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-links h5,
+.footer-contact h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #a86c2f;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #4b3b2c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #d78a44; /* orange accent */
+}
+
+.footer-contact p {
+  margin: 0.4rem 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e3d5c2;
+  font-size: 0.9rem;
+  color: #6b5743;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .process-section h2 {
+    font-size: 2rem;
+  }
+
+  .step h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  /* ========== MEDIA QUERIES ========== */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-content,
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 20px;
+  width: 100%;
+}
+
+
+/* Phones */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-section {
+    padding: 20px 10px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+  
